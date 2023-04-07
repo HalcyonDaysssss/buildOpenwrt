@@ -26,7 +26,6 @@ cp -rf ./openwrt_release/package/kernel/linux/* ./openwrt/package/kernel/linux/
 # 获取源代码
 git clone -b master --depth 1 https://github.com/immortalwrt/immortalwrt.git immortalwrt
 git clone -b openwrt-21.02 --depth 1 https://github.com/immortalwrt/immortalwrt.git immortalwrt_21
-git clone -b main --depth 1 https://github.com/linkease/istore istore
 git clone -b master --depth 1 https://github.com/immortalwrt/packages.git immortalwrt_pkg
 git clone -b master --depth 1 https://github.com/immortalwrt/luci.git immortalwrt_luci
 git clone -b master --depth 1 https://github.com/coolsnowwolf/lede.git lede
@@ -41,6 +40,7 @@ git clone -b master --depth 1 https://github.com/QiuSimons/OpenWrt-Add.git OpenW
 git clone -b master --depth 1 https://github.com/nxhack/openwrt-node-packages.git openwrt-node
 git clone -b packages --depth 1 https://github.com/xiaorouji/openwrt-passwall passwall_pkg
 git clone -b luci --depth 1 https://github.com/xiaorouji/openwrt-passwall passwall_luci
+git clone -b master --depth 1 https://github.com/zzsj0928/luci-app-pushbot pushbot
 git clone -b main --depth 1 https://github.com/jjm2473/openwrt-third openwrt-third
 git clone -b master --depth 1 https://github.com/lisaac/luci-app-dockerman dockerman
 git clone -b master --depth 1 https://github.com/lisaac/luci-app-diskman diskman
