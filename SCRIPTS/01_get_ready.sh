@@ -1,7 +1,7 @@
 #!/bin/bash
-latest_release="$(curl -s https://github.com/HalcyonDaysssss/openwrt/tags | grep -Eo "v[0-9\.]+\-*r*c*[0-9]*.tar.gz" | sed -n '/[2-9][0-9]/p' | sed -n 1p | sed 's/.tar.gz//g')"
-git clone --single-branch -b ${latest_release} https://github.com/HalcyonDaysssss/openwrt openwrt_release
-git clone --single-branch -b openwrt-23.04 https://github.com/HalcyonDaysssss/openwrt openwrt
+latest_release="$(curl -s https://github.com/openwrt/openwrt/tags | grep -Eo "v[0-9\.]+\-*r*c*[0-9]*.tar.gz" | sed -n '/[2-9][0-9]/p' | sed -n 1p | sed 's/.tar.gz//g')"
+git clone --single-branch -b ${latest_release} https://github.com/openwrt/openwrt openwrt_release
+git clone --single-branch -b openwrt-22.03 https://github.com/openwrt/openwrt openwrt
 rm -f ./openwrt/include/version.mk
 rm -f ./openwrt/include/kernel.mk
 rm -f ./openwrt/include/kernel-5.10
@@ -32,7 +32,7 @@ git clone -b master --depth 1 https://github.com/immortalwrt/luci.git immortalwr
 git clone -b master --depth 1 https://github.com/coolsnowwolf/lede.git lede
 git clone -b master --depth 1 https://github.com/coolsnowwolf/luci.git lede_luci
 git clone -b master --depth 1 https://github.com/coolsnowwolf/packages.git lede_pkg
-git clone -b master --depth 1 https://github.com/HalcyonDaysssss/openwrt.git openwrt_ma
+git clone -b master --depth 1 https://github.com/openwrt/openwrt.git openwrt_ma
 git clone -b master --depth 1 https://github.com/openwrt/packages.git openwrt_pkg_ma
 git clone -b master --depth 1 https://github.com/openwrt/luci.git openwrt_luci_ma
 git clone -b master --depth 1 https://github.com/Lienol/openwrt.git Lienol
